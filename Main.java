@@ -8,4 +8,10 @@ public class Main {
     public static int dodawanie(int a, int b){
         return a+b;
     }
+    public static double CalculateAverage(int[] values) {
+        if (values == null || values.length == 0) {
+            throw new IllegalArgumentException("Array cannot be null or empty");
+        }
+        
+    }
 }
