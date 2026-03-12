@@ -29,6 +29,9 @@ public class Main {
         return max;
     }
     public static int CalculateMin(int[] values) {
+        if (values == null || values.length == 0) {
+            throw new IllegalArgumentException("Array cannot be null or empty");
+        }
         int min = values[0];
         for (int v : values) {
             if (v < min) min = v;
