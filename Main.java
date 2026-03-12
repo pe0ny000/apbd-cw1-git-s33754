@@ -29,6 +29,10 @@ public class Main {
         return max;
     }
     public static int CalculateMin(int[] values) {
-        return 0; 
+        int min = values[0];
+        for (int v : values) {
+            if (v < min) min = v;
+        }
+        return min;
     }
 }
