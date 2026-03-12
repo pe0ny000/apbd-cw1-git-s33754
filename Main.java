@@ -32,10 +32,10 @@ public class Main {
         if (values == null || values.length == 0) {
             throw new IllegalArgumentException("Error");
         }
-        int min = values[0];
+        int MINIMALNIE = values[0];
         for (int v : values) {
-            if (v < min) min = v;
+            if (v < MINIMALNIE) MINIMALNIE = v;
         }
-        return min;
+        return MINIMALNIE;
     }
 }
