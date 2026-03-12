@@ -18,4 +18,14 @@ public class Main {
         }
         return (double) sum / values.length;
     }
+    public static int CalculateMax(int[] values) {
+        if (values == null || values.length == 0) {
+            throw new IllegalArgumentException("Array cannot be null or empty");
+        }
+        int max = values[0];
+        for (int v : values) {
+            if (v > max) max = v;
+        }
+        return max;
+    }
 }
