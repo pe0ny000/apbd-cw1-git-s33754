@@ -32,10 +32,10 @@ public class Main {
         if (values == null || values.length == 0) {
             throw new IllegalArgumentException("Skibidi sigma");
         }
-        int minimum = values[0];
+        int MINIMALNIE = values[0];
         for (int v : values) {
-            if (v < minimum) minimum = v;
+            if (v < MINIMALNIE) MINIMALNIE = v;
         }
-        return minimum;
+        return MINIMALNIE;
     }
 }
