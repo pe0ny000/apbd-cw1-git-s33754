@@ -12,6 +12,10 @@ public class Main {
         if (values == null || values.length == 0) {
             throw new IllegalArgumentException("Array cannot be null or empty");
         }
-        
+        long sum = 0;
+        for (int v : values) {
+            sum += v;
+        }
+        return (double) sum / values.length;
     }
 }
