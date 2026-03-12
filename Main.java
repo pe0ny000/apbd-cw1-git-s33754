@@ -30,7 +30,7 @@ public class Main {
     }
     public static int CalculateMin(int[] values) {
         if (values == null || values.length == 0) {
-            throw new IllegalArgumentException("Array cannot be null or empty");
+            throw new IllegalArgumentException("Error");
         }
         int min = values[0];
         for (int v : values) {
